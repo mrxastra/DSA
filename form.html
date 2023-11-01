@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div>
+    <div class="saved"><button class="saved-button">Saved</button></div>
+    <div class="form">
+      <form class="form-box" action="">  
+        <div class="header-box">  <h1 class="header">
+          Support Form
+        </h1></div>
+      
+        <div class="name-box"><h3>Type Your Name</h3></div>
+        <div><input class="name-input" type="text" placeholder="Your Name"></div>  
+        
+        <div class="phone-box"><h3>Type Your Phone Number</h3></div>
+        <div><input class="phone-input" type="number" placeholder="Phone"></div>
+        
+        <div class="city-box"><h3>You City</h3></div>
+        <div><input class="city-input" type="text" placeholder="City"> </div>
+
+        <div class="submit" onclick="
+        // let namein = document.querySelector('.name-input').value;
+        // let phonein = document.querySelector('.phone-input').value;
+        // let cityin = document.querySelector('.city-input').value;
+
+        //   if(!namein || !phonein || !cityin  ){
+        //     alert('Invalid');
+        //   }
+        //   else{
+        //     alert('Your form has been submited');
+        //   }
+
+        document.querySelector('.namesec').innerText = 'hello';
+        console.log(savedata.name);
+
+
+    // const takename = document.querySelector('.name-input').value;
+    // console.log(takename);
+
+    // savename = takename;
+    // console.log(savename);
+    //       saveall();
+        "><button>Submit</button></div>
+      </form>  
+    </div>
+</div>
+  
+  <div class="secondpage">
+      <div class="datas">
+        <p class="namesec"></p>
+        <p class="phonesec"></p>
+        <p class="citysec"></p>
+      </div>
+    </div>
+  </div>
+
+
+  <style>
+    .datas{
+      display: flex;
+      flex-direction: row;
+      color: red;
+
+    }
+    
+    /* .secondpage{
+      width: 100%;
+      height: 100vh; 
+      padding-top: 100vh;
+      color: rgb(0, 0, 0); */
+    /* }
+    .secondpage div p {
+      background-color:red;
+      position: relative;
+    } */
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body{
+      background : url("boll.jpg") no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+    }
+    .form {
+      /* background : url("boll.jpg") no-repeat;
+      background-position: center;
+      background-size: cover;*/
+      height: 100vh;
+      width: 100%;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      
+
+    }
+    .form-box{
+      background-color: rgba(101, 136, 136, 0.24);
+      padding: 4vh;
+      border-radius: 8px;
+      backdrop-filter: blur(4px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+  
+    }
+
+    .header-box{
+      padding-bottom: 5vh;
+
+    }
+    .name-box{
+      padding-bottom: 15px ;
+    }
+    .phone-box{
+      padding:30px 0px 15px 0px;
+    }
+    .city-box{
+      padding:30px 0px 15px 0px;
+    }
+    .submit{
+      padding: 30px 0 0 0;
+
+    }
+    button{
+      padding: 5px;
+      border: none;
+      border-radius: 3px;
+      background-color: rgb(5, 93, 93);
+      font-size: 18px;
+      font-weight: bold;
+      color: white;
+
+    }
+
+    .name-input,.phone-input,.city-input{
+      padding: 5px;
+      border: none;
+      border-radius: 3px;
+      
+    }
+    .saved-button{
+      display: inline-block;
+      background-color: rgb(36, 112, 112);
+      font-size: 20px;
+      font-weight: 200;
+      margin: 2vh 0 0 2vh;
+
+    }
+
+  </style>
+
+
+
+  <script>
+
+    let savedata = {
+      name : 'asad',
+      phone : '9449332221',
+      city : 'pune'
+    };
+    const savename = document.querySelector('.namesec').value;
+
+    const takename = document.querySelector('.name-box').value;
+
+    savename = takename;
+    
+    let nameplace = document.querySelector('.namesec').innerText;
+    let phoneplace = document.querySelector('.phonesec').innerText;
+    let cityplace = document.querySelector('.citysec').innerText;
+
+
+    // const savebutton = document.getElementsByClassName("click").click{console.log('click working');});
+
+
+
+  </script>
+</body>
+</html>
